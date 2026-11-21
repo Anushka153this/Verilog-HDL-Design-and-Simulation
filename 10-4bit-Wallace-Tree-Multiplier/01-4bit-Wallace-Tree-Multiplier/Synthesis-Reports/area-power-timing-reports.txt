@@ -1,0 +1,159 @@
+dc_shell> report_area
+****************************************
+Report : area
+Design : wallace
+Version: W-2024.09
+Date : Fri Oct 16 09:35:03 2026
+****************************************
+Information: Updating design information... (UID-85)
+Information: Timing loop detected. (OPT-150)
+HA5/U2/A2 HA5/U2/Y U34/A1 U34/Y HA4/U2/A2 HA4/U2/Y U33/A1 U33/Y
+Information: Timing loop detected. (OPT-150)
+HA7/U2/A2 HA7/U2/Y U34/A2 U34/Y HA4/U2/A2 HA4/U2/Y U33/A1 U33/Y
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'HA5/U2'
+     to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'HA5/U2'
+     to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'HA7/U2'
+       to break a timing loop. (OPT-314)
+Warning: Disabling timing arc between pins 'A2' and 'Y' on cell 'HA7/U2'
+       to break a timing loop. (OPT-314)
+Library(s) Used:
+   saed32rvt_tt0p78vn40c (File: /home/<user>/RTL2GDSII/ref/lib/stdcell_rvt/saed32rvt_tt0p78vn40c.db)
+Number of ports:                         79
+Number of nets:                         124
+Number of cells:                         67
+Number of combinational cells:                  53
+Number of sequential cells:                   0
+Number of macros/black boxes:                    0
+Number of buf/inv:                         0
+Number of references:                       16
+Combinational area:                  159.602433
+Buf/Inv area:                     0.000000
+Noncombinational area:                  0.000000
+Macro/Black Box area:                   0.000000
+Net Interconnect area:               12.194040
+Total cell area:                159.602433
+Total area:                    171.796473
+dc_shell> report_power
+Loading db file '/home/<user>/RTL2GDSII/ref/lib/stdcell_rvt/saed32rvt_tt0p78vn40c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+Warning: Design has unannotated primary inputs. (PWR-414)
+****************************************
+Report : power
+      -analysis_effort low
+Design : wallace
+Version: W-2024.09
+Date : Fri Oct 16 09:35:10 2026
+****************************************
+Library(s) Used:
+   saed32rvt_tt0p78vn40c (File:
+/home/<user>/RTL2GDSII/ref/lib/stdcell_rvt/saed32rvt_tt0p78vn40c.db)
+Operating Conditions: tt0p78vn40c Library: saed32rvt_tt0p78vn40c
+Wire Load Model Mode: enclosed
+Design         Wire Load Model               Library
+------------------------------------------------
+wallace              ForQA             saed32rvt_tt0p78vn40c
+half_adder_0            ForQA             saed32rvt_tt0p78vn40c
+full_adder_0            ForQA             saed32rvt_tt0p78vn40c
+half_adder_1            ForQA             saed32rvt_tt0p78vn40c
+half_adder_2            ForQA             saed32rvt_tt0p78vn40c
+half_adder_3            ForQA             saed32rvt_tt0p78vn40c
+half_adder_4            ForQA             saed32rvt_tt0p78vn40c
+half_adder_5            ForQA             saed32rvt_tt0p78vn40c
+half_adder_6            ForQA             saed32rvt_tt0p78vn40c
+full_adder_1            ForQA             saed32rvt_tt0p78vn40c
+full_adder_2            ForQA             saed32rvt_tt0p78vn40c
+full_adder_3            ForQA             saed32rvt_tt0p78vn40c
+full_adder_4            ForQA             saed32rvt_tt0p78vn40c
+full_adder_5            ForQA             saed32rvt_tt0p78vn40c
+full_adder_6            ForQA             saed32rvt_tt0p78vn40c
+Global Operating Voltage = 0.78
+Power-specific unit information :
+   Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+   Time Units = 1ns
+    Dynamic Power Units = 1uW (derived from V,C,T units)
+    Leakage Power Units = 1pW
+Attributes
+----------
+i - Including register clock pin internal power
+  Cell Internal Power = 9.6945 uW (72%)
+  Net Switching Power = 3.7842 uW (28%)
+                   ---------
+Total Dynamic Power = 13.4787 uW (100%)t
+Cell Leakage Power = 208.1095 nW
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+             Internal        Switching           Leakage             Total
+Power Group Power                    Power               Power            Power ( % ) Attrs
+--------------------------------------------------------------------------------------------------
+io_pad            0.0000           0.0000            0.0000           0.0000 ( 0.00%)
+memory              0.0000           0.0000            0.0000           0.0000 ( 0.00%)
+black_box           0.0000           0.0000            0.0000           0.0000 ( 0.00%)
+clock_network 0.0000                    0.0000           0.0000           0.0000 ( 0.00%) i
+register         0.0000            0.0000           0.0000           0.0000 ( 0.00%)
+sequential         0.0000           0.0000            0.0000           0.0000 ( 0.00%)
+combinational         9.6945           3.7842         2.0811e+05            13.6868 ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total            9.6945 uW           3.7842 uW 2.0811e+05 pW                   13.6868 uW
+dc_shell> report_timing
+****************************************
+Report : timing
+     -path full
+     -delay max
+     -max_paths 1
+Design : wallace
+Version: W-2024.09
+Date : Fri Oct 16 09:35:14 2026
+****************************************
+Operating Conditions: tt0p78vn40c Library: saed32rvt_tt0p78vn40c
+Wire Load Model Mode: enclosed
+Startpoint: a[2] (input port)
+Endpoint: p[6] (output port)
+Path Group: (none)
+Path Type: max
+Des/Clust/Port Wire Load Model                   Library
+------------------------------------------------
+wallace           ForQA                saed32rvt_tt0p78vn40c
+full_adder_6         ForQA                saed32rvt_tt0p78vn40c
+full_adder_5         ForQA                saed32rvt_tt0p78vn40c
+full_adder_3         ForQA                saed32rvt_tt0p78vn40c
+Point                            Incr       Path
+-----------------------------------------------------------
+input external delay                    0.00       0.00 r
+a[2] (in)                         0.00       0.00 r
+U26/Y (AND2X1_RVT)                             0.08       0.08 r
+FA2/b (full_adder_6)                     0.00        0.08 r
+FA2/U3/Y (XOR2X1_RVT)                             0.21      0.30 f
+FA2/U1/Y (XOR2X1_RVT)                             0.21      0.51 f
+FA2/sum (full_adder_6)                      0.00       0.51 f
+FA3/a (full_adder_5)                     0.00       0.51 f
+FA3/U3/Y (XOR2X1_RVT)                             0.19      0.69 r
+FA3/U2/Y (AO22X1_RVT)                            0.13       0.82 r
+FA3/carry (full_adder_5)                   0.00       0.82 r
+FA5/b (full_adder_3)                     0.00        0.82 r
+FA5/U3/Y (XOR2X1_RVT)                             0.22      1.04 f
+FA5/U2/Y (AO22X1_RVT)                            0.12       1.16 f
+FA5/carry (full_adder_3)                   0.00       1.16 f
+HA2/a (half_adder_6)                       0.00       1.16 f
+HA2/U2/Y (AND2X1_RVT)                              0.10      1.26 f
+HA2/carry (half_adder_6)                     0.00       1.26 f
+FA7/cin (full_adder_1)                    0.00       1.26 f
+FA7/U1/Y (XOR2X1_RVT)                             0.17      1.43 r
+FA7/sum (full_adder_1)                      0.00       1.43 r
+HA7/a (half_adder_1)                       0.00       1.43 r
+HA7/U2/Y (AND2X1_RVT)                              0.09      1.53 r
+HA7/carry (half_adder_1)                     0.00       1.53 r
+U34/Y (AND3X1_RVT)                             0.13       1.66 r
+HA6/b (half_adder_2)                       0.00       1.66 r
+HA6/U2/Y (AND2X1_RVT)                              0.10      1.76 r
+HA6/carry (half_adder_2)                     0.00       1.76 r
+U33/Y (AND2X1_RVT)                             0.11       1.87 r
+HA7/b (half_adder_1)                       0.00       1.87 r
+HA7/U1/Y (XOR2X1_RVT)                             0.19       2.06 f
+HA7/sum (half_adder_1)                       0.00       2.06 f
+p[6] (out)                         0.00       2.06 f
+data arrival time                             2.06
+-----------------------------------------------------------
+(Path is unconstrained)
