@@ -1,0 +1,25 @@
+2. Record the Area Report.
+****************************************
+Report : area
+Design : booth
+Version: W-2024.09
+Date : Fri Oct 9 10:06:12 2026
+****************************************
+Information: Updating design information... (UID-85)
+Library(s) Used:
+   saed32rvt_tt0p78vn40c (File: /home/<user>/RTL2GDSII/ref/lib/stdcell_rvt/saed32rvt_tt0p78vn40c.db)
+Number of ports:                  16
+Number of nets:                  118
+Number of cells:                 110
+Number of combinational cells:         110
+Number of sequential cells:           0
+Number of macros/black boxes:            0
+Number of buf/inv:                 24
+Number of references:               16
+Combinational area:           252.873281
+Buf/Inv area:               30.497280
+Noncombinational area:           0.000000
+Macro/Black Box area:            0.000000
+Net Interconnect area:         48.732698
+Total cell area:          252.873281
+Total area:              301.605979
