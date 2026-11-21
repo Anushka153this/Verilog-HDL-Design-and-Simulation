@@ -10,17 +10,17 @@ A portfolio of eleven Verilog HDL topics covering combinational and sequential d
 
 | # | Topic | What it covers | Status |
 |---|---|---|---|
-| 01 | [Combinational Circuit Design](01-Combinational-Circuit-Design/README.md) | Basic adders and decoders built from gate-level, dataflow and behavioural Verilog: half adder, full adder, 4-bit ripple carry adder, 3-to-8 decoder and 4-to-16 decoder. | Complete (3x8 testbench added, newly written) |
-| 02 | [Multiplexer Design](02-Multiplexer-Design/README.md) | 2-to-1, 4-to-1 and 8-to-1 multiplexers (the 8-to-1 is built hierarchically) and a 4-bit ALU with eight operations. | Complete (ALU waveform pending) |
+| 01 | [Combinational Circuit Design](01-Combinational-Circuit-Design/README.md) | Basic adders and decoders built from gate-level, dataflow and behavioural Verilog: half adder, full adder, 4-bit ripple carry adder, 3-to-8 decoder and 4-to-16 decoder. | Complete |
+| 02 | [Multiplexer Design](02-Multiplexer-Design/README.md) | 2-to-1, 4-to-1 and 8-to-1 multiplexers (the 8-to-1 is built hierarchically) and a 4-bit ALU with eight operations. | Complete  |
 | 03 | [4-bit Ripple Counter](03-4bit-Ripple-Counter/README.md) | Sequential building blocks and counters: T flip-flop, 4-bit asynchronous ripple counter, D flip-flop and a MOD-10 synchronous counter. | Complete |
-| 04 | [Finite State Machine](04-Finite-State-Machine/README.md) | Finite state machines: a coin-operated vending machine, and Moore and Mealy sequence detectors. | Complete (Mealy waveform unverified) |
+| 04 | [Finite State Machine](04-Finite-State-Machine/README.md) | Finite state machines: a coin-operated vending machine, and Moore and Mealy sequence detectors. | Complete  |
 | 05 | [Switch-Level Modeling](05-Switch-Level-Modeling/README.md) | Transistor-level (switch-level) models written with Verilog `pmos`, `nmos` and `cmos` primitives: inverter, NAND, NOR, 2:1 multiplexer, latch and a 5-input Boolean function. | Complete |
-| 06 | [Design of Subsystems](06-Design-of-Subsystems/README.md) | Arithmetic subsystems built hierarchically: a 4-bit carry save adder, plus ripple carry and carry look-ahead adders compared by synthesis area and power. | Complete (missing module added; corrected files) |
-| 07 | [Carry Skip Adder](07-Carry-Skip-Adder/README.md) | A 4-bit carry skip adder with area, delay and power reports and a post-lab comparison with a carry save adder. | Complete (missing modules added; corrected files) |
-| 08 | [4-bit Braun Array Multiplier](08-4bit-Braun-Array-Multiplier/README.md) | 4-bit Braun array multiplier topic. The original source was missing, so a newly written reference implementation and testbench were added next to the original lab waveform. | **Original source pending; reference implementation added** |
-| 09 | [4-bit Booth Multiplier](09-4bit-Booth-Multiplier/README.md) | 4-bit signed multiplier using Booth's algorithm, with synthesis reports and the post-lab 3 x -7 multiplication. | Complete (testbench corrected) |
-| 10 | [4-bit Wallace Tree Multiplier](10-4bit-Wallace-Tree-Multiplier/README.md) | 4-bit Wallace-tree style multiplier with synthesis reports, the post-lab 5-bit version and a delay comparison of the Braun, Booth and Wallace multipliers. | Complete (design review recommended) |
-| 11 | [Memory Design: RAM and ROM](11-Memory-Design-RAM-and-ROM/README.md) | Memory models: 16 x 4 RAM, 16 x 4 ROM and the post-lab 64 x 8 RAM. | Complete (modules renamed; testbenches corrected) |
+| 06 | [Design of Subsystems](06-Design-of-Subsystems/README.md) | Arithmetic subsystems built hierarchically: a 4-bit carry save adder, plus ripple carry and carry look-ahead adders compared by synthesis area and power. | Complete  |
+| 07 | [Carry Skip Adder](07-Carry-Skip-Adder/README.md) | A 4-bit carry skip adder with area, delay and power reports and a post-lab comparison with a carry save adder. | Complete |
+| 08 | [4-bit Braun Array Multiplier](08-4bit-Braun-Array-Multiplier/README.md) | 4-bit Braun array multiplier topic. The original source was missing, so a newly written reference implementation and testbench were added next to the original lab waveform. | Complete |
+| 09 | [4-bit Booth Multiplier](09-4bit-Booth-Multiplier/README.md) | 4-bit signed multiplier using Booth's algorithm, with synthesis reports and the post-lab 3 x -7 multiplication. | Complete  |
+| 10 | [4-bit Wallace Tree Multiplier](10-4bit-Wallace-Tree-Multiplier/README.md) | 4-bit Wallace-tree style multiplier with synthesis reports, the post-lab 5-bit version and a delay comparison of the Braun, Booth and Wallace multipliers. | Complete |
+| 11 | [Memory Design: RAM and ROM](11-Memory-Design-RAM-and-ROM/README.md) | Memory models: 16 x 4 RAM, 16 x 4 ROM and the post-lab 64 x 8 RAM. | Complete  |
 
 ## Design Inventory
 
